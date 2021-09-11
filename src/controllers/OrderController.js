@@ -15,20 +15,20 @@ class OrderController {
 
 	// Insert a new order
 	async insertOrder(
-		client_name,
-		sell_id,
-		product_desc,
-		price_product,
-		price_tranche
+		clientName,
+		sellId,
+		productDesc,
+		priceProduct,
+		priceTranche
 	) {
 		try {			
 			var requestBody = {
 				xml: insertNewOrder (
-					client_name,
-					sell_id,
-					product_desc,
-					price_product,
-					price_tranche
+					clientName,
+					sellId,
+					productDesc,
+					priceProduct,
+					priceTranche
 				)
 			};
 

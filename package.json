@@ -4,7 +4,11 @@
   "description": "LinkApi Test",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "docker-deploy": "bash shell.bash local deploy",
+    "docker-logs": "bash shell.bash local logs",
+    "docker-stop": "bash shell.bash local stop"
   },
   "repository": {
     "type": "git",
@@ -25,10 +29,17 @@
     "module-alias": "^2.2.2",
     "moment": "^2.29.1",
     "mongoose": "^6.0.5",
-    "query-string": "^7.0.1"
+    "query-string": "^7.0.1",
+    "yarn": "^1.22.11"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.4.0"
   },
   "_moduleAliases": {
     "@root": ".",
