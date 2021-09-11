@@ -2,11 +2,21 @@
 
 This project aims to carry out the technical test of LinkApi
 
-## Prerequisites
+## **Prerequisites**
 
 For full operation of the application is necessary:
 
 - NODE >= 14 or Docker
+
+## **Routes**
+
+- **/bling/pedidos - (GET) -** Lists all Bling orders.
+- **/pipedrive - (GET) -** Lists all PipeDrive deals.
+- **/pipedrive/execute - (PUT) -** Search all businesses with PipeDrive "won" status and create a new order in Bling.
+- **/aggregate - (PUT) -** Validates all requests for the day in Bling and saves the value per day in MongoDB.
+- **/aggregate - (GET) -** Returns MongoDB data.
+- **/aggregate/:date - (GET) -** Returns MongoDB data filtered by date. Example:
+  > /aggregate/2021-09-11
 
 ## **Install instructions**
 
