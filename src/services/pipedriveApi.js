@@ -7,7 +7,7 @@ class Pipedrive {
             api_token: process.env.PIPEDRIVE_KEY
         };        
         this.pipeDrive_api = axios.create({
-            baseURL: 'https://linkapitest.pipedrive.com/v1',
+            baseURL: process.env.PIPEDRIVE_BASE_URL,
         });
     }
 

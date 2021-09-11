@@ -9,21 +9,26 @@
 
 const version = require('@root/package.json').version;
 const OrderController = require('@controllers/OrderController'),
-      PipedriveController = require('@controllers/PipedriveController');
+      PipedriveController = require('@controllers/PipedriveController'),
+      AggregateController = require('@controllers/AggregateController');
 
 module.exports = (http) => {
     // Default routes
     http.get(`/ping`, async (req, res) => res.status(200).send(`pong`));
-
     http.get(`/version`, async (req, res) => res.status(200).send({version}));
 
     // Bling - Consult orders
     http.get(`/bling/orders`, OrderController.getOrder);
 
-    // Pipedrive
+    // Pipedrive - List all business
     http.get(`/pipedrive`, PipedriveController.listAllBusiness);
     // Get all business with WON status and set new Bling order
-    http.get(`/pipedrive/execute`, PipedriveController.execute);
+    http.put(`/pipedrive/execute`, PipedriveController.execute);
 
+    // Mongo - Aggreagate Bling
+    http.put(`/aggregate`, AggregateController.aggregate);
+    // Get collection data
+    http.get(`/aggregate`, AggregateController.getAggregates);
+    http.get(`/aggregate/:date`, AggregateController.getAggregateByDate);
     
 };

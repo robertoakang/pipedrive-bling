@@ -5,7 +5,7 @@ class Bling {
     constructor() {
         this.params = { apikey: process.env.BLING_KEY };
         this.bling_api = axios.create({
-            baseURL: 'https://bling.com.br/Api/v2',
+            baseURL: process.env.BLING_BASE_URL,
         });
     }
 
