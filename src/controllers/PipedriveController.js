@@ -1,3 +1,11 @@
+/**
+ *
+ * Responsável controlar as execuções relativas ao Pipedrive
+ *
+ * @file         PipedriveController.js
+ * @package      controllers
+ */
+
 const PipeDriveApi = require("@services/pipedriveApi");
 const OrderController = require("./OrderController");
 

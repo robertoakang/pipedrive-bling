@@ -1,3 +1,11 @@
+/**
+ *
+ * Responsável configurar a collection Deal
+ *
+ * @file         Deal.js
+ * @package      models
+ */
+
 const mongoose = require("mongoose");
 
 const DealSchema = new mongoose.Schema(

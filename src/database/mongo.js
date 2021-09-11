@@ -1,9 +1,9 @@
 /**
  *
- * Utilitário que proporciona os logs da aplicação.
+ * Responsável por manusear a conexão com o MongoDB.
  *
- * @file         log.js
- * @package      utils
+ * @file         mongo.js
+ * @package      database
  */
 
 const mongoose = require("mongoose");

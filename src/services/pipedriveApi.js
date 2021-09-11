@@ -1,3 +1,11 @@
+/**
+ *
+ * Responsável efetuar as requisições para o Pipedrive.
+ *
+ * @file          pipedriveApi.js
+ * @package       services
+ */
+
 const axios = require("axios");
 
 class Pipedrive {

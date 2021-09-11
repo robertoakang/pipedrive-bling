@@ -1,3 +1,11 @@
+/**
+ *
+ * Responsável efetuar as requisições para o Bling.
+ *
+ * @file          blingApi.js
+ * @package       services
+ */
+
 const axios = require("axios");
 const qs = require("query-string");
 

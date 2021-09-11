@@ -1,3 +1,12 @@
+/**
+ *
+ * Responsável controlar as execuções de agregação entre Pipedrive e Bling, inserindo
+ * no MongoDB.
+ *
+ * @file         AggregateController.js
+ * @package      controllers
+ */
+
 const BlingApi = require("@services/blingApi");
 const moment = require("moment");
 

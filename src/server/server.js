@@ -1,10 +1,10 @@
 /**
  *
- * Servidor HTTP responsável por receber todas as requisições que são feitas para a aplicação.
+ * Servidor HTTP responsável por receber todas as requisições que são feitas
+ * para a aplicação.
  *
  * @file          server.js
  * @package       server
- * @description	 Método padrão responsável por iniciar o servidor HTTP.
  */
 
 const express = require("express");

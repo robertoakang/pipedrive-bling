@@ -1,11 +1,10 @@
-/* eslint-disable import/no-unresolved */
 /**
  *
- * O Router é responsável por orientar as solicitações aos seus controladores apropriados.
+ * Responsável por registrar as rotas e orientar as solicitações aos
+ * seus controladores apropriados.
  *
  * @file          router.js
- * @package       server
- * @description	 Responsável por registrar as rotas que serão utilizadas no server HTTP.
+ * @package       routes
  */
 
 const { version } = require("@root/package.json");

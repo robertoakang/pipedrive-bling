@@ -1,3 +1,11 @@
+/**
+ *
+ * Responsável por provir o template XML para requisição ao Bling.
+ *
+ * @file          XMLTemplate.js
+ * @package       services
+ */
+
 const insertNewOrder = (
   clientName,
   sellId,
