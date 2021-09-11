@@ -1,6 +1,5 @@
 const PipeDriveApi = require('@services/pipedriveApi');
 const OrderController = require('./OrderController');
-let orders = [];
 
 class PipedriveController {
 	// Lists all business
