@@ -1,6 +1,6 @@
 # **_pipedrive-bling_**
 
-This project aims to carry out the technical test of LinkApi
+This project aims to integrate Pipedrive with Bling
 
 ## **Prerequisites**
 
